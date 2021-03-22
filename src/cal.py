@@ -1,18 +1,16 @@
 #Python program
 
+class cal:
+    result = 0
 
-import csv
+    def __init__(self):
+        x = 2 +2
+        self.result =x;
+        pass
 
-new_rows = []
 
-with open('file.csv', 'r') as csvfile:
-    for row in csv.reader(csvfile):
-        row = [int(val) for val in row]
-        row.append(sum(row))
-        new_rows.append(row)
+    import csv
 
-with open('file.csv', 'w') as csvfile:
-    csv.writer(csvfile).writerows(new_rows)
 
 
 # add function
