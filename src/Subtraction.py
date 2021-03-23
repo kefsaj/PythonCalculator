@@ -1,4 +1,4 @@
-def subtraction(a, b):
+def Subtraction(a, b):
     a = float(a)
     b = float(b)
     c = b - a
