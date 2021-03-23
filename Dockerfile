@@ -1,7 +1,7 @@
 FROM python:3.7
 
-ADD . .
+ADD src /src
 
-RUN pip install -r requirements.txt
+ADD . .
 
 CMD ["python", "./src/CalculatorTests.py"]
